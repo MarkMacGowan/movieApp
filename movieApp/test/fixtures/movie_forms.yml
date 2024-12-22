@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  movie_id: 1
+  title: MyString
+  year: 2024-12-19
+  cast: MyString
+  description: MyString
+  dvd: false
+  blu_ray: false
+
+two:
+  movie_id: 1
+  title: MyString
+  year: 2024-12-19
+  cast: MyString
+  description: MyString
+  dvd: false
+  blu_ray: false

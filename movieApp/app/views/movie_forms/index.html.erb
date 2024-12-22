@@ -1,0 +1,32 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Movie forms" %>
+
+<h1>Movie Collector</h1>
+<div id="top">
+  
+</div>
+
+<div id="movie_forms">
+  <div id="movie_collectionTitle">
+    <h2>Movie Collection</h2>
+  </div>
+  <% @movie_forms.each do |movie_form| %>
+
+    <div id="movie_item">
+      <%= render movie_form %>
+     
+        <button id="movie_button">
+          <%= link_to "View Movie", movie_form %>
+        </button>
+      
+    </div>
+
+  <% end %>
+
+
+<div>
+  <button id="new_button">
+    <%= link_to "New Movie", new_movie_form_path %>
+  </button>
+

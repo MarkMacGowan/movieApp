@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+<h1>Movie Collector</h1>
+<div id="movie_forms">
+  <h2>Movie</h2>
+  <div id="movie_item">
+    
+    <%= render @movie_form %>
+      <button id ="edit_button">
+        <%= link_to "Edit", edit_movie_form_path(@movie_form) %> 
+      </button>
+      
+    <%= button_to "Delete Movie", @movie_form, method: :delete %>
+      
+      <button id="homepage_button">
+        <%= link_to "Homepage", movie_forms_path %>
+      </button>
+  </div>
+</div>
+
+
+
