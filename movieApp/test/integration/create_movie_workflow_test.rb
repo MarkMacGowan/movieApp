@@ -5,7 +5,7 @@ class CreateMovieWorkFlowTest < ActionDispatch::IntegrationTest
     get "/movie_forms/new"
     assert_response :success
     
-    post "/movie_forms", params: {movie_forms:{movie_id: 10, title: "Man of Steel", year: 2013, cast: "Henry Cavill, Amy Adams", description: "Superman vs Zod", dvd: true, blu_ray: true}}
+    post "/movie_forms", params: {movie_forms:{movie_id: 5, title: "Superman Returns", year: 2006-7-01, cast: "Brandon Routh", description: "Kryptonite!", dvd: true, blu_ray: true}}
     assert_response :found
   end
 
@@ -19,7 +19,7 @@ class CreateMovieWorkFlowTest < ActionDispatch::IntegrationTest
   end
 
   test "movie record should be edited" do
-    get "/movie_forms/5/edit"
+    get "/movie_forms/6/edit"
     assert_response :success
 
     post "/movie_forms/5", params: {movie_forms:{edit_button: true}}
